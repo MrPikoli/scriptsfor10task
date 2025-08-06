@@ -13,7 +13,7 @@ response = ssm.send_command(
 )
 
 command_id = response['Command']['CommandId']
-time.sleep(2)  # Подождать пару секунд перед получением ответа
+time.sleep(2)  
 
 output = ssm.get_command_invocation(
     CommandId=command_id,
